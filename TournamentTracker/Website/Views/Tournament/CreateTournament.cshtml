@@ -1,0 +1,70 @@
+﻿
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Create Tournament</h2>
+        </div>
+        <div class="col-12">
+            <p>Please create a new tournament using the form below</p>
+        </div>
+    </div>
+    <div class="row">
+        <form action="/tournament/create" method="post">
+            <div class="mb-3">
+                <label for="tournamentName" class="form-label">Tournament Name</label>
+                <input type="text" class="form-control" id="tournamentName" placeholder="Tournament Name">
+            </div>
+            <div class="mb-3">
+                <label for="entryFee" class="form-label">Entry Fee</label>
+                <input type="text" class="form-control" id="entryFee" placeholder="Entry Fee">
+            </div>
+            <br />
+            <div class="mb-3">
+                <label for="teamSelection" class="form-label">Select Teams</label>
+                <select id="teamSelection" class="form-select" aria-label="">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Team One</option>
+                    <option value="2">Team Two</option>
+                    <option value="3">Team Three</option>
+                </select>
+                <button id="addTeam" class="btn btn-success">Add Team</button>
+                <a class="btn btn-default" href="/team/create">Create New Team</a>
+            </div>
+            <br />
+            <div class="mb-3">
+                <label for="prizes" class="form-label">Select Prizes</label>
+                <select id="prizes" class="form-select" aria-label="">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Prize One</option>
+                    <option value="2">Prize Two</option>
+                    <option value="3">Prize Three</option>
+                </select>
+                <button id="addPrize" class="btn btn-success">Add Prize</button>
+                <a class="btn btn-default" href="/prize/create">Create Prize</a>
+            </div>
+            <br />
+            <div class="mb-3">
+                <label for="finalTeamSelection" class="form-label">Confirm Teams</label>
+                <select id="finalTeamSelection" class="form-select" aria-label="">
+                    <option>Open this select menu</option>
+                    <option value="1">Team One</option>
+                </select>
+                <button id="removeTeam" class="btn btn-danger">Remove Team</button>
+            </div>
+            <br />
+            <div class="mb-3">
+                <label for="prizes" class="form-label">Confirm Prizes</label>
+                <select id="prizes" class="form-select" aria-label="">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Prize One</option>
+                    <option value="2">Prize Two</option>
+                    <option value="3">Prize Three</option>
+                </select>
+                <button id="removePrize" class="btn btn-danger">Remove Prize</button>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+</div>
