@@ -1,0 +1,40 @@
+﻿
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Create Prize</h2>
+        </div>
+        <div class="col-12">
+            <p>Please create a new Prize using the form below, all prizes created will appear on the tournament creator</p>
+        </div>
+    </div>
+    <div class="row">
+        <form action="/prize/create" method="post">
+            <div class="mb-3">
+                <label for="placeNumber" class="form-label">Place Number</label>
+                <input type="text" class="form-control" id="placeNumber" placeholder="Place Number">
+            </div>
+            <div class="mb-3">
+                <label for="placeName" class="form-label">Place Name</label>
+                <input type="text" class="form-control" id="placeName" placeholder="Place Name">
+            </div>
+            <div class="mb-3">
+                <label for="prizeAmount" class="form-label">Prize Amount</label>
+                <input type="text" class="form-control" id="prizeAmount" placeholder="Prize Amount">
+            </div>
+
+            <h3>
+                --OR--
+            </h3>
+            <div class="mb-3">
+                <label for="prizePercentage" class="form-label">Prize Percentage</label>
+                <input type="text" class="form-control" id="prizePercentage" placeholder="Prize Percentage">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</div>
+

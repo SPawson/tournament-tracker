@@ -13,5 +13,11 @@ namespace Website.Controllers
         {
             return View("~/Views/Tournament/CreateTournament.cshtml");
         }
+
+        [HttpGet]
+        public ActionResult SelectTournament()
+        {
+            return View("~/Views/Tournament/Select.cshtml");
+        }
     }
 }

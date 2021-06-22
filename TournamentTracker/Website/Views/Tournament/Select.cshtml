@@ -1,0 +1,28 @@
+﻿
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Select an existing Tournament</h2>
+        </div>
+        <div class="col-12">
+            <p>Please select one of the existing tournaments using the form below</p>
+        </div>
+    </div>
+    <div class="row">
+        <form action="/tournament/load" method="post">
+            <br />
+            <div class="mb-3">
+                <label for="teamSelection" class="form-label">Select Tournament</label>
+                <select id="teamSelection" class="form-select" aria-label="">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Tournament 1</option>
+                    <option value="2">Tournament 2</option>
+                    <option value="3">Tournament 3</option>
+                </select>
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary">Load Tournament</button>
+        </form>
+    </div>
+    
+</div>

@@ -1,0 +1,43 @@
+﻿
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2>Create Team</h2>
+        </div>
+        <div class="col-12">
+            <p>Please create a new team using the form below, all teams created will appear on the tournament creator</p>
+        </div>
+    </div>
+    <div class="row">
+        <form action="/team/create" method="post">
+            <div class="mb-3">
+                <label for="teamName" class="form-label">Team name</label>
+                <input type="text" class="form-control" id="teamName" placeholder="Team Name">
+            </div>
+            <div class="mb-3">
+                <label for="personSelection" class="form-label">Select Person</label>
+                <select id="personSelection" class="form-select" aria-label="">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Person One</option>
+                    <option value="2">Person Two</option>
+                    <option value="3">Person Three</option>
+                </select>
+                <button id="addPerson" class="btn btn-success">Add Person</button>
+                @Html.ActionLink("Add Person", "Create", "Person" , new {@class = "btn btn-success" })
+            </div>
+            <br />
+            <br />
+            <div class="mb-3">
+                <label for="finalPeopleSelection" class="form-label">Confirm Team Members</label>
+                <select id="finalPeopleSelection" class="form-select" aria-label="">
+                    <option value="1">Person One</option>
+                </select>
+                <button id="removePerson" class="btn btn-danger">Remove Person</button>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</div>
+

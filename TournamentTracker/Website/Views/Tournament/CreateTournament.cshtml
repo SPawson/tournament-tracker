@@ -28,7 +28,8 @@
                     <option value="3">Team Three</option>
                 </select>
                 <button id="addTeam" class="btn btn-success">Add Team</button>
-                <a class="btn btn-default" href="/team/create">Create New Team</a>
+                @Html.ActionLink("Create Team", "Create", "Team", new { @class = "btn btn-default" })
+
             </div>
             <br />
             <div class="mb-3">
@@ -40,7 +41,7 @@
                     <option value="3">Prize Three</option>
                 </select>
                 <button id="addPrize" class="btn btn-success">Add Prize</button>
-                <a class="btn btn-default" href="/prize/create">Create Prize</a>
+                @Html.ActionLink("Create Prize", "Create", "Prize", new { @class = "btn btn-default" })
             </div>
             <br />
             <div class="mb-3">
