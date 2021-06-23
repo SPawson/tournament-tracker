@@ -7,6 +7,10 @@ namespace TrackerLibrary.Models
     public class PrizeModel
     {
         /// <summary>
+        /// Prize Id
+        /// </summary>
+        public int Id { get; set; }
+        /// <summary>
         /// Represents the finishing place for the prize
         /// </summary>
         public int PlaceNumber { get; set; }
